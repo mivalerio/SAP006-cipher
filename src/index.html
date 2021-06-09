@@ -2,13 +2,44 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
+  <title>Cripto Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="root">
-    <h1>Hello world!</h1>
+    <header> 
+      <h1>Cripto Cipher</h1>
+    </header>
+
+    <section>
+      <h2>Bem Vindo ao Cripto Cipher!</h2><br>
+    <article>
+      <p>A <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" >Cifra de César</a> 
+        é uma das técnicas mais simples de codificar uma mensagem.<br> 
+        É um tipo de cifra por substituição, em que cada letra do texto original é <br>
+        substituida por outra que se encontra há um número fixo de posições (deslocamento)<br>
+         mais a frente do mesmo alfabeto.<br>
+
+        Por exemplo se usarmos o deslocamento (offset) de 3 posições:<br>
+        
+        Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+        Alfabeto com cifra: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C<br>
+        A letra A será D<br>
+        A palavra CASA será FDVD</p>
+
+        <h3>Voce Deseja:</h3>
+
+        <form action="pagina2.html">
+          <input type="submit" value="Criptografar"id="Criptografar"/>
+        </form>
+
+        <form action="pagina3.html">
+          <input type="submit" value="Descriptografar" id="Descriptografar"/>
+        </form>
+    </article>  
   </div>
+ 
+
   <script src="index.js" type="module"></script>
 </body>
 </html>
