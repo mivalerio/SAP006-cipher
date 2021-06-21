@@ -5,40 +5,100 @@
   <title>Cripto Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div id="root">
     <header> 
       <h1>Cripto Cipher</h1>
+      
     </header>
-
+  
     <section>
-      <h2>Bem Vindo ao Cripto Cipher!</h2><br>
+
     <article>
-      <p>A <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" >Cifra de César</a> 
-        é uma das técnicas mais simples de codificar uma mensagem.<br> 
+    
+      <main>
+      <div class="explicacao">
+      <p>Cripto Cipher é um site baseano na <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" >Cifra de César</a> 
+        que é uma das técnicas mais antigas e simples de codificar uma mensagem.<br> 
         É um tipo de cifra por substituição, em que cada letra do texto original é <br>
         substituida por outra que se encontra há um número fixo de posições (deslocamento)<br>
          mais a frente do mesmo alfabeto.<br>
 
-        Por exemplo se usarmos o deslocamento (offset) de 3 posições:<br>
+        Por exemplo se usarmos o deslocamento de 3 posições:<br>
         
         Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
         Alfabeto com cifra: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C<br>
         A letra A será D<br>
-        A palavra CASA será FDVD</p>
+        A palavra CASA se transformará FDVD</p>
+      </div>
+      
+      <div class="instrucoes">
+        <p>Aqui no Cripto Cipher voce pode enviar mensagens secretas para quem voce quiser, de forma segura. <br>
+          Basta escolher um numero chave para sua senha, escrever o texto a ser codificado  e clicar em Codificar.<br>
+          Para Decodificar é so inserir a senha e o texto criptografado e clicar em descriptografar!</p><br>
+      
+      </div>
 
-        <h3>Voce Deseja:</h3>
+    
+      </main>  
 
-        <form action="pagina2.html">
-          <input type="submit" value="Criptografar"id="Criptografar"/>
-        </form>
+        
 
-        <form action="pagina3.html">
-          <input type="submit" value="Descriptografar" id="Descriptografar"/>
-        </form>
-    </article>  
-  </div>
- 
+      
+      <div class="containers">
+          <div class="container">
+            
+            <div class="entradas">
+              <p>CODIFICAR</p>
+              <label for="number"></label>
+              <input type="number" id="offsetEncriptar" name="offset" placeholder="Digite o Deslocamento de 1 a 10" ><br>
+              <label for="texto"></label><br>
+            </div>
+
+            <div class="entradas">
+              <textarea id="mensagem" name="mensagem" rows = "10" cols = "50" placeholder="Digite Sua Mensagem Aqui">
+              </textarea><br>
+              <input type="text" readonly id="mensagemCodificada" name="mensagemCodificada" style="height: 175px; width: 373px"><br>
+            </div>
+
+            <div class="buttons">
+              <button id ="buttonCodificar">Codificar</button><br>
+            </div>
+
+          </div>
+          <div id="limpar">
+            <input type="submit" id="btnlimpar" name="btnlimpar" value= "limpar" onclick="limpar()">
+          </div>
+
+        <div class="container">
+          
+          <div class="entradas">
+            <p>DECODIFICAR</p>
+            <label for="number"></label>
+                <input type="number" id="offsetDecriptar" name="offset" placeholder="Digite o Deslocamento de 1 a 10"><br>
+                <label for="texto"></label><br>
+          </div>
+          
+          <div class="entradas">
+                <textarea id="msg" name="msg" rows = "10" cols = "50" placeholder="Digite sua Mensagem Aqui">
+                </textarea><br>
+                <input type="text" readonly id="mensagemDecodificada" name="mensagemDecodificada" 
+                     style="height: 175px; width: 373px"><br> 
+          </div> 
+          
+          <div class="buttons">
+            <button id ="buttonDecodificar">Decodificar</button><br>
+            
+          </div> 
+                  
+        </div>
+      </div>
+
+    </article> 
+   
+  
+</section>
 
   <script src="index.js" type="module"></script>
 </body>

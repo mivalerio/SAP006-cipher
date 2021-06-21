@@ -14,13 +14,17 @@ const cipher = {
         letraCodificada = ((letraCodificada - 65 + offset) % 26 +65);
 
       }
+        else if
+        (letraCodificada >= 97 && letraCodificada <=122){
+          letraCodificada = ((letraCodificada - 97 + offset) % 26 + 97);
+        }
+
      //transforma o codigo de numero da tab Asc para letra e joga na variavel texto
      textoCodificado += String.fromCharCode(letraCodificada);
      
     }
     return textoCodificado;
 
-    //console.log("funcionou");
   },
 
   
@@ -39,6 +43,14 @@ const cipher = {
           letraCodificada = ((letraCodificada + 65 - offset) % 26 +65);
   
         }
+        else if (letraCodificada >= 97 && letraCodificada <=122){
+          letraCodificada = ((letraCodificada - 122 - offset) % 26 + 122);
+        }
+
+        else if (letraCodificada == 128 && letraCodificada == 135) {
+            letraCodificada = ((letraCodificada - 65 - offset) % 26 + 65);
+
+          }
        //transforma o codigo de numero da tab Asc para letra e joga na variavel texto
        textoCodificado += String.fromCharCode(letraCodificada);
        
