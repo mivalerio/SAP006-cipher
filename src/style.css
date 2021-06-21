@@ -7,9 +7,9 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     color: #c2e0fc;
-    background-color: #2c282e;
+    background-image: url(img/banner.jpg);
     font-weight: bold;
-    
+    padding: 50px;
 }
 .imagem{
     position: relative;
@@ -34,7 +34,7 @@ a{
 
 
   
-  .entradas {
+.entradas {
     display: block;
     margin: 11px auto 20px;
     border-radius: 15px;
@@ -43,18 +43,24 @@ a{
     width: auto;
     text-align: center;
     font-weight: bold;
-  }
+    
+}
+
+textarea{
+    resize: none;
+
+}
   
   
-  label {
+label {
     font-size: 17px;
     margin: 0 0 15px;
 
     
 
-  }
+}
 
-  .buttons button {
+.buttons button {
     border: 0;
     color: #ffffff;
     background: #293c52;
@@ -65,40 +71,47 @@ a{
     margin-top: 20px;
     cursor: pointer;
     transition: .3s;
-  }
+}
   
-  .button button:hover {
+.button button:hover {
     opacity: .8;
-  }
+}
 
-  main{
-      display: flex;
-      justify-content: space-between;
-      margin-left: 150px;
-      margin-right: 150px;
-      text-align: center;
-      background-color:#2c282e;
-      font-weight: bold;
-  }
-  .instrucoes{
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color:#383838;
+    font-weight: bold;
+    
+}
+img{
+    max-width:300px; 
+    max-height:250px; 
+    width: auto; 
+    height: auto; 
+    
+}
+.instrucoes{
     color: #000000;
     font-size: 18px;
     text-align: right;
     line-height: 31px;
     width: 560px;
     margin: 6px 28px;
-  }
+}
 
-  .explicacao{
+.explicacao{
     color:#000000;
     font-size:18px;
     text-align: left;
     line-height: 31px;
     width: 560px;
     margin: 6px 28px;
-  }
+}
   
-  #btnlimpar{
+#btnlimpar{
     border: 0;
     color: #ffffff;
     background: #293c52;
@@ -110,8 +123,8 @@ a{
     cursor: pointer;
     transition: .3s;
     text-align: center;
-  }
+}
 
-  #limpar{
+#limpar{
       margin-top: 400px;
-  }
+ }
