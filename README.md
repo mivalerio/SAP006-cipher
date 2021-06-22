@@ -55,3 +55,5 @@ Agora é só copiar o texto codificado e enviar a pessoa desejada.
  
 Lembre-se também de fornecer esse site e a sua chave de criptografia para que possam decodificar seu texto utilizando o botão Decodificar.
 
+IMPORTANTE: Utilizar o alfabeto de A a Z, letras maiusculas e minusculas, nao utilizar caracteres especiais.
+
